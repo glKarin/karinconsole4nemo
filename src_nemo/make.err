@@ -1,0 +1,59 @@
+MTermWidget.cpp:155:6: 警告：未使用的参数‘event’ [-Wunused-parameter]
+ void MTermWidget::resizeEvent(QGraphicsSceneResizeEvent *event)
+      ^
+MTermWidget.cpp:196:6: 警告：未使用的参数‘currentLine’ [-Wunused-parameter]
+ void MTermWidget::updateViewport(int currentLine, int maxLines)
+      ^
+MTermWidget.cpp:196:6: 警告：未使用的参数‘maxLines’ [-Wunused-parameter]
+MTermWidget.cpp:242:6: 警告：未使用的参数‘position’ [-Wunused-parameter]
+ void MTermWidget::viewportPositionChanged(const QPointF &position)
+      ^
+MTermWidget.cpp:375:6: 警告：未使用的参数‘title’ [-Wunused-parameter]
+ void MTermWidget::showBanner(const QString &title) const
+      ^
+MTermWidget.cpp: 在成员函数‘void MTermWidget::setSuppression(bool)’中:
+MTermWidget.cpp:540:3: 错误：‘QInputContext’在此作用域中尚未声明
+   QInputContext *ic = qApp -> inputContext();
+   ^
+MTermWidget.cpp:540:18: 错误：‘ic’在此作用域中尚未声明
+   QInputContext *ic = qApp -> inputContext();
+                  ^
+MTermWidget.cpp:540:31: 错误：‘class QGuiApplication’没有名为‘inputContext’的成员
+   QInputContext *ic = qApp -> inputContext();
+                               ^
+MTermWidget.cpp: 在成员函数‘void MTermWidget::setTranslucency(bool)’中:
+MTermWidget.cpp:551:3: 错误：‘QInputContext’在此作用域中尚未声明
+   QInputContext *ic = qApp -> inputContext();
+   ^
+MTermWidget.cpp:551:18: 错误：‘ic’在此作用域中尚未声明
+   QInputContext *ic = qApp -> inputContext();
+                  ^
+MTermWidget.cpp:551:31: 错误：‘class QGuiApplication’没有名为‘inputContext’的成员
+   QInputContext *ic = qApp -> inputContext();
+                               ^
+In file included from ../lib/TerminalDisplay.h:37:0,
+                 from MTerminalDisplay.h:27,
+                 from MTermWidget.cpp:30:
+../lib/ColorTables.h: 在全局域：
+../lib/ColorTables.h:8:25: 警告：‘whiteonblack_color_table’定义后未使用 [-Wunused-variable]
+ static const ColorEntry whiteonblack_color_table[TABLE_COLORS] =
+                         ^
+../lib/ColorTables.h:24:25: 警告：‘greenonblack_color_table’定义后未使用 [-Wunused-variable]
+ static const ColorEntry greenonblack_color_table[TABLE_COLORS] =
+                         ^
+../lib/ColorTables.h:39:25: 警告：‘greyonblack_color_table’定义后未使用 [-Wunused-variable]
+ static const ColorEntry greyonblack_color_table[TABLE_COLORS] =
+                         ^
+../lib/ColorTables.h:54:25: 警告：‘blackonlightyellow_color_table’定义后未使用 [-Wunused-variable]
+ static const ColorEntry blackonlightyellow_color_table[TABLE_COLORS] = 
+                         ^
+In file included from ../lib/Character.h:32:0,
+                 from ../lib/Filter.h:34,
+                 from ../lib/TerminalDisplay.h:35,
+                 from MTerminalDisplay.h:27,
+                 from MTermWidget.cpp:30:
+../lib/CharacterColor.h:105:25: 警告：‘Konsole::base_color_table’定义后未使用 [-Wunused-variable]
+ static const ColorEntry base_color_table[TABLE_COLORS] =
+                         ^
+make[1]: *** [../.objs/MTermWidget.o] 错误 1
+make: *** [release] 错误 2
